@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Music Player</title>
+  </head>
+  <body>
+    <span
+    alt=""
+    class="action_button"
+    id="speedBtn"
+  >1X</span>
+  <ul class="speed_combo">
+    <li class="speed_combo_item">0.5</li>
+    <li class="speed_combo_item">1</li>
+    <li class="speed_combo_item">2</li>
+  </ul>
+    <audio
+      src=""
+    ></audio>
+    <div class="wrapper">
+      <img src="" alt="music poster image" class="poster" />
+      <h1 class="title"></h1>
+      <h3 class="artist"></h3>
+      <div class="time_detailes">
+        <span class="time_detail" id="timeElapsed" title="time elapsed"
+          >00:00</span
+        >
+        <span class="time_detail" id="timeRemaining" title="time remaining"
+          >00:00</span
+        >
+      </div>
+      <progress class="timeline" value="0" max="100"></progress>
+      <div class="action_buttons">
+        <img
+          src="res/icons/rewind.svg"
+          alt=""
+          class="action_button"
+          id="prevBtn"
+        />
+        <img
+          src="res/icons/replay_10.svg"
+          alt=""
+          class="action_button"
+          id="backwardBtn"
+        />
+        <img
+          src="res/icons/play.svg"
+          alt=""
+          class="action_button"
+          id="playBtn"
+        />
+        <img
+          src="res/icons/forward_10.svg"
+          alt=""
+          class="action_button"
+          id="forwardBtn"
+        />
+        <img
+          src="res/icons/fast_forward.svg"
+          alt=""
+          class="action_button"
+          id="nextBtn"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
